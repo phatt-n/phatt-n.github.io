@@ -1,15 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Phatt — Cyber Security Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Papras Nualchaem — GRC &amp; Risk Analyst</title>
+<meta name="description" content="Case studies in data privacy compliance and information security governance, by Papras (Phatt) Nualchaem.">
+<meta property="og:title" content="Papras Nualchaem — Governance, Risk &amp; Compliance">
+<meta property="og:description" content="Case studies in data privacy compliance and information security governance.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFBFA;
+    --ink:#16191C;
+    --muted:#5B646C;
+    --teal:#0F5C63;
+    --rule:#DFE4E6;
+    --band:#EFF3F3;
+    --measure:64ch;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+  a{color:var(--teal)}
+  a:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}
+
+  /* ---------- masthead ---------- */
+  header{padding:88px 0 40px}
+  h1{
+    font-family:Newsreader,Georgia,serif;
+    font-weight:400;
+    font-size:clamp(2.4rem,6vw,3.4rem);
+    line-height:1.1;
+    letter-spacing:-0.015em;
+    margin:0 0 14px;
+  }
+  .standfirst{
+    font-family:Newsreader,Georgia,serif;
+    font-size:clamp(1.05rem,2.4vw,1.3rem);
+    line-height:1.55;
+    color:var(--muted);
+    max-width:52ch;
+    margin:0 0 26px;
+  }
+  .intro{max-width:var(--measure);margin:0}
+
+  /* ---------- section heads ---------- */
+  h2{
+    font-family:Newsreader,Georgia,serif;
+    font-weight:500;
+    font-size:1.45rem;
+    letter-spacing:-0.01em;
+    margin:0 0 4px;
+  }
+  section{padding:44px 0;border-top:1px solid var(--rule)}
+
+  /* ---------- register (signature element) ---------- */
+  .entry{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:0 32px;
+    padding:26px 0;
+  }
+  .entry + .entry{border-top:1px solid var(--rule)}
+  .rail{
+    color:var(--muted);
+    font-size:.85rem;
+    line-height:1.5;
+    border-left:2px solid var(--teal);
+    padding-left:14px;
+  }
+  .rail span{display:block}
+  .rail .yr{color:var(--ink);font-weight:500}
+  .entry h3{
+    font-family:Newsreader,Georgia,serif;
+    font-weight:500;
+    font-size:1.3rem;
+    line-height:1.3;
+    margin:0 0 8px;
+  }
+  .entry p{margin:0 0 14px;max-width:var(--measure)}
+  .pillars{
+    display:flex;flex-wrap:wrap;gap:8px;
+    list-style:none;margin:0 0 16px;padding:0;
+  }
+  .pillars li{
+    background:var(--band);
+    color:var(--teal);
+    font-size:.8rem;
+    padding:3px 10px;
+    border-radius:2px;
+  }
+  .doc{
+    display:inline-block;
+    font-weight:500;
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+  }
+  .doc small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;margin-top:2px}
+
+  /* ---------- plain lists ---------- */
+  .focus{margin:14px 0 0;padding:0;list-style:none;max-width:var(--measure)}
+  .focus li{padding:9px 0;border-bottom:1px solid var(--rule)}
+  .focus li:last-child{border-bottom:0}
+
+  /* ---------- contact ---------- */
+  .contact{display:grid;grid-template-columns:150px 1fr;gap:10px 32px;margin-top:16px;font-size:.95rem}
+  .contact dt{color:var(--muted)}
+  .contact dd{margin:0}
+  footer{padding:34px 0 70px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--rule)}
+
+  @media (max-width:640px){
+    header{padding:56px 0 32px}
+    .entry,.contact{grid-template-columns:1fr;gap:12px}
+    .rail{border-left:0;border-top:2px solid var(--teal);padding:10px 0 0}
+    .rail span{display:inline}
+    .rail span + span::before{content:" · "}
+    .contact dt{margin-top:8px}
+  }
+  @media print{
+    body{background:#fff}
+    section{break-inside:avoid}
+  }
+</style>
 </head>
-<body style="font-family: system-ui, sans-serif; max-width: 720px; margin: 60px auto; padding: 0 20px; line-height: 1.6;">
-  <h1>Phatt</h1>
-  <p>MSc Cyber Security · GRC &amp; Security Assessment</p>
-  <h2>Selected Projects</h2>
-  <p>ISO/IEC 27001:2022 Readiness Assessment — Data Centre &amp; Network Infrastructure</p>
-  <p><a href="docs/iso27001-readiness-assessment.pdf">Download full case study (PDF)</a></p>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Papras Nualchaem</h1>
+    <p class="standfirst">Data privacy and information security governance. Currently completing an MSc in Cyber Security.</p>
+    <p class="intro">I work on the part of security that has to survive contact with other teams: taking a legal or standards requirement and turning it into a process people actually follow. Two pieces of work below, written up so you can see the reasoning, not just the result.</p>
+  </header>
+
+  <section>
+    <h2>Selected work</h2>
+
+    <article class="entry">
+      <div class="rail">
+        <span class="yr">2021–2022</span>
+        <span>Industry</span>
+        <span>ShopeePay</span>
+      </div>
+      <div>
+        <h3>PDPA consent flow coordination</h3>
+        <p>Coordinated Legal, Product and UX across the Thailand and Singapore teams to design a PDPA-compliant consent flow before the first marketing email campaign went out. Covers consent capture, sender identity as an anti-impersonation control, and an opt-out path built to meet the Section 19 requirement that withdrawing consent be as easy as giving it.</p>
+        <ul class="pillars">
+          <li>Governance</li>
+          <li>Risk management</li>
+          <li>Compliance</li>
+        </ul>
+        <a class="doc" href="docs/pdpa-consent-flow-shopeepay.pdf">
+          Read the case study
+          <small>PDF, 4 pages</small>
+        </a>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rail">
+        <span class="yr">2026</span>
+        <span>Postgraduate</span>
+        <span>Team of eight</span>
+      </div>
+      <div>
+        <h3>ISO/IEC 27001:2022 readiness assessment</h3>
+        <p>Gap assessment of a data centre and network infrastructure scope against ISO/IEC 27001:2022, produced as part of an eight-person postgraduate team. The client organisation is anonymised throughout and no operational detail is reproduced.</p>
+        <ul class="pillars">
+          <li>ISMS</li>
+          <li>Gap assessment</li>
+          <li>Annex A controls</li>
+        </ul>
+        <a class="doc" href="docs/iso27001-readiness-assessment.pdf">
+          Read the case study
+          <small>PDF, 11 pages</small>
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>What I work on</h2>
+    <ul class="focus">
+      <li>Privacy programme work: consent lifecycle, notices, data subject rights under Thailand's PDPA</li>
+      <li>ISMS readiness and gap assessment against ISO/IEC 27001:2022</li>
+      <li>Control design and risk treatment for operational and reputational risk</li>
+      <li>Coordination between Legal, Product and engineering, which is usually where compliance work actually stalls</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Background</h2>
+    <dl class="contact">
+      <dt>Education</dt>
+      <dd>MSc Cybersecurity and Risk Management, National Institute of Development Administration (NIDA), in progress</dd>
+      <dt>Previously</dt>
+      <dd>Associate, Marketing, ShopeePay (Thailand)</dd>
+      <dt>Based in</dt>
+      <dd>Bangkok, Thailand</dd>
+      <dt>Certifications</dt>
+      <dd>CompTIA Security+ · Certified in Cybersecurity (ISC²) · Data Protection (ICDL Thailand) · ISO 27001 in progress</dd>
+      <dt>Languages</dt>
+      <dd>Thai (native), English (TOEIC 915)</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Get in touch</h2>
+    <dl class="contact">
+      <dt>Email</dt>
+      <dd><a href="mailto:papras.n@gmail.com">papras.n@gmail.com</a></dd>
+      <dt>LinkedIn</dt>
+      <dd><a href="https://www.linkedin.com/in/paprasnua">linkedin.com/in/paprasnua</a></dd>
+      <dt>CV</dt>
+      <dd><a href="cv.pdf">Download CV (PDF)</a></dd>
+    </dl>
+  </section>
+
+  <footer>
+    Case studies are written up independently. Client and employer information has been generalised or anonymised where required.
+  </footer>
+
+</div>
 </body>
 </html>
