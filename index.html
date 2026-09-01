@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Papras Nualchaem — GRC &amp; Risk Analyst</title>
-<meta name="description" content="Case studies in data privacy compliance and information security governance, by Papras (Phatt) Nualchaem.">
-<meta property="og:title" content="Papras Nualchaem — Governance, Risk &amp; Compliance">
-<meta property="og:description" content="Case studies in data privacy compliance and information security governance.">
+<meta name="description" content="GRC and risk analyst in Bangkok. Case studies in ISO/IEC 27001 readiness assessment and PDPA consent compliance.">
+<meta property="og:title" content="Papras Nualchaem — GRC &amp; Risk Analyst">
+<meta property="og:description" content="Case studies in ISO/IEC 27001 readiness assessment and PDPA consent compliance.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,14 +36,14 @@
   a:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}
 
   /* ---------- masthead ---------- */
-  header{padding:88px 0 40px}
+  header{padding:76px 0 36px}
   h1{
     font-family:Newsreader,Georgia,serif;
     font-weight:400;
     font-size:clamp(2.4rem,6vw,3.4rem);
     line-height:1.1;
     letter-spacing:-0.015em;
-    margin:0 0 14px;
+    margin:0 0 12px;
   }
   .standfirst{
     font-family:Newsreader,Georgia,serif;
@@ -51,18 +51,26 @@
     line-height:1.55;
     color:var(--muted);
     max-width:52ch;
-    margin:0 0 26px;
+    margin:0 0 20px;
   }
   .intro{max-width:var(--measure);margin:0}
+  .intro,.entry p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 
-  /* ---------- justified prose ---------- */
-  .intro,.entry p{
-    text-align:justify;
-    hyphens:auto;
-    -webkit-hyphens:auto;
+  .quicklinks{
+    margin:22px 0 0;padding:0;list-style:none;
+    display:flex;flex-wrap:wrap;gap:10px 22px;
+    font-size:.95rem;
+  }
+  .status{
+    display:inline-block;
+    margin-top:20px;
+    padding:8px 14px;
+    background:var(--band);
+    border-left:2px solid var(--teal);
+    font-size:.92rem;
   }
 
-  /* ---------- section heads ---------- */
+  /* ---------- sections ---------- */
   h2{
     font-family:Newsreader,Georgia,serif;
     font-weight:500;
@@ -70,14 +78,15 @@
     letter-spacing:-0.01em;
     margin:0 0 4px;
   }
-  section{padding:44px 0;border-top:1px solid var(--rule)}
+  section{padding:40px 0;border-top:1px solid var(--rule)}
+  .lede{color:var(--muted);margin:0 0 6px;font-size:.95rem}
 
-  /* ---------- register (signature element) ---------- */
+  /* ---------- work register ---------- */
   .entry{
     display:grid;
     grid-template-columns:150px 1fr;
     gap:0 32px;
-    padding:26px 0;
+    padding:24px 0;
   }
   .entry + .entry{border-top:1px solid var(--rule)}
   .rail{
@@ -97,17 +106,6 @@
     margin:0 0 8px;
   }
   .entry p{margin:0 0 14px;max-width:var(--measure)}
-  .pillars{
-    display:flex;flex-wrap:wrap;gap:8px;
-    list-style:none;margin:0 0 16px;padding:0;
-  }
-  .pillars li{
-    background:var(--band);
-    color:var(--teal);
-    font-size:.8rem;
-    padding:3px 10px;
-    border-radius:2px;
-  }
   .figs{
     display:flex;flex-wrap:wrap;gap:0 26px;
     list-style:none;margin:0 0 16px;padding:14px 0 0;
@@ -115,28 +113,9 @@
   }
   .figs li{font-size:.85rem;color:var(--muted);padding:2px 0}
   .figs b{display:block;color:var(--ink);font-size:1.15rem;font-weight:500;line-height:1.3}
-  .certs{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:14px 0 0;padding:0}
-  .certs li{
-    border:1px solid var(--rule);
-    border-radius:2px;
-    padding:6px 12px;
-    font-size:.88rem;
-  }
-  .certs li.wip{color:var(--muted)}
-  .status{
-    display:inline-block;
-    margin-top:22px;
-    padding:8px 14px;
-    background:var(--band);
-    border-left:2px solid var(--teal);
-    font-size:.92rem;
-  }
-  .doc{
-    display:inline-block;
-    font-weight:500;
-    text-decoration-thickness:1px;
-    text-underline-offset:3px;
-  }
+  .pillars{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 16px;padding:0}
+  .pillars li{background:var(--band);color:var(--teal);font-size:.8rem;padding:3px 10px;border-radius:2px}
+  .doc{display:inline-block;font-weight:500;text-decoration-thickness:1px;text-underline-offset:3px}
   .doc small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;margin-top:2px}
 
   /* ---------- plain lists ---------- */
@@ -144,21 +123,38 @@
   .focus li{padding:9px 0;border-bottom:1px solid var(--rule)}
   .focus li:last-child{border-bottom:0}
 
-  /* ---------- contact ---------- */
-  .contact{display:grid;grid-template-columns:150px 1fr;gap:10px 32px;margin-top:16px;font-size:.95rem}
+  .certs{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:14px 0 0;padding:0}
+  .certs li{border:1px solid var(--rule);border-radius:2px;padding:6px 12px;font-size:.88rem}
+
+  /* ---------- two-column rows ---------- */
+  .rows{margin:14px 0 0;padding:0;list-style:none}
+  .rows li{
+    display:grid;
+    grid-template-columns:1fr 165px;
+    gap:4px 20px;
+    padding:11px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .rows li:last-child{border-bottom:0}
+  .rows .what{font-weight:500}
+  .rows .where{color:var(--muted);font-size:.9rem}
+  .rows .when{color:var(--muted);font-size:.88rem;text-align:right}
+
+  .contact{display:grid;grid-template-columns:150px 1fr;gap:10px 32px;margin-top:14px;font-size:.95rem}
   .contact dt{color:var(--muted)}
   .contact dd{margin:0}
-  footer{padding:34px 0 70px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--rule)}
+  footer{padding:30px 0 70px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--rule)}
 
   @media (max-width:640px){
-    /* narrow columns justify badly, so let the right edge run ragged */
     .intro,.entry p{text-align:left;hyphens:manual}
-    header{padding:56px 0 32px}
+    header{padding:52px 0 30px}
     .entry,.contact{grid-template-columns:1fr;gap:12px}
     .rail{border-left:0;border-top:2px solid var(--teal);padding:10px 0 0}
     .rail span{display:inline}
     .rail span + span::before{content:" · "}
     .contact dt{margin-top:8px}
+    .rows li{grid-template-columns:1fr}
+    .rows .when{text-align:left}
   }
   @media print{
     body{background:#fff}
@@ -171,13 +167,47 @@
 
   <header>
     <h1>Papras Nualchaem</h1>
-    <p class="standfirst">Data privacy and information security governance. Currently completing an MSc in Cyber Security.</p>
+    <p class="standfirst">GRC and risk analyst. Operational risk, internal controls and data protection compliance.</p>
     <p class="intro">I work on the part of security that has to survive contact with other teams: taking a legal or standards requirement and turning it into a process people actually follow. Two pieces of work below, written up so you can see the reasoning, not just the result.</p>
+    <ul class="quicklinks">
+      <li><a href="cv.pdf">Download CV (PDF)</a></li>
+      <li><a href="mailto:papras.n@gmail.com">papras.n@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/paprasnua">LinkedIn</a></li>
+    </ul>
     <p class="status">Open to GRC, data privacy and internal controls roles in Bangkok.</p>
   </header>
 
   <section>
     <h2>Selected work</h2>
+    <p class="lede">Full case studies, written for a reviewer rather than a marker.</p>
+
+    <article class="entry">
+      <div class="rail">
+        <span class="yr">2026</span>
+        <span>Postgraduate</span>
+        <span>Real client, anonymised</span>
+      </div>
+      <div>
+        <h3>ISO/IEC 27001:2022 readiness assessment</h3>
+        <p>Gap assessment of a data centre and network infrastructure scope for a regulated financial services organisation, produced within an eight-person postgraduate team. I consolidated the evidence review, validated the assessment results, ran the readiness scoring and wrote the report. Covers scope definition, a scored risk register, a draft Statement of Applicability and a six-month roadmap to certification.</p>
+        <ul class="figs">
+          <li><b>115</b>items assessed</li>
+          <li><b>86.09%</b>practical readiness</li>
+          <li><b>15</b>gaps found</li>
+          <li><b>10</b>corrective actions</li>
+        </ul>
+        <ul class="pillars">
+          <li>ISMS</li>
+          <li>Gap assessment</li>
+          <li>Annex A controls</li>
+          <li>Risk register</li>
+        </ul>
+        <a class="doc" href="docs/iso27001-readiness-assessment.pdf">
+          Read the case study
+          <small>PDF, 11 pages</small>
+        </a>
+      </div>
+    </article>
 
     <article class="entry">
       <div class="rail">
@@ -187,47 +217,20 @@
       </div>
       <div>
         <h3>PDPA consent flow coordination</h3>
-        <p>Coordinated Legal, Product and UX across the Thailand and Singapore teams to design a PDPA-compliant consent flow before the first marketing email campaign went out. Covers consent capture, sender identity as an anti-impersonation control, and an opt-out path built to meet the Section 19 requirement that withdrawing consent be as easy as giving it.</p>
-        <ul class="pillars">
-          <li>Governance</li>
-          <li>Risk management</li>
-          <li>Compliance</li>
-        </ul>
+        <p>Coordinated Legal, Product and UX across the Thailand and Singapore teams to design a PDPA-compliant consent and opt-out flow before the first marketing email campaign went out. Covers consent capture, sender identity as an anti-impersonation control, and an opt-out path built to meet the Section 19 requirement that withdrawing consent be as easy as giving it. Delivered ahead of the PDPA enforcement date rather than in response to it.</p>
         <ul class="figs">
           <li><b>~300,000</b>users in the first send</li>
           <li><b>3</b>functions, 2 markets</li>
           <li><b>~2 months</b>to launch</li>
         </ul>
+        <ul class="pillars">
+          <li>Governance</li>
+          <li>Risk management</li>
+          <li>Compliance</li>
+        </ul>
         <a class="doc" href="docs/pdpa-consent-flow-shopeepay.pdf">
           Read the case study
           <small>PDF, 3 pages</small>
-        </a>
-      </div>
-    </article>
-
-    <article class="entry">
-      <div class="rail">
-        <span class="yr">2026</span>
-        <span>Postgraduate</span>
-        <span>Team of eight</span>
-      </div>
-      <div>
-        <h3>ISO/IEC 27001:2022 readiness assessment</h3>
-        <p>Gap assessment of a data centre and network infrastructure scope against ISO/IEC 27001:2022, produced as part of an eight-person postgraduate team. The client organisation is anonymised throughout and no operational detail is reproduced.</p>
-        <ul class="pillars">
-          <li>ISMS</li>
-          <li>Gap assessment</li>
-          <li>Annex A controls</li>
-        </ul>
-        <ul class="figs">
-          <li><b>115</b>items assessed</li>
-          <li><b>86.09%</b>practical readiness</li>
-          <li><b>15</b>gaps found</li>
-          <li><b>10</b>corrective actions</li>
-        </ul>
-        <a class="doc" href="docs/iso27001-readiness-assessment.pdf">
-          Read the case study
-          <small>PDF, 11 pages</small>
         </a>
       </div>
     </article>
@@ -253,17 +256,50 @@
   </section>
 
   <section>
-    <h2>Background</h2>
-    <dl class="contact">
-      <dt>Education</dt>
-      <dd>MSc Cybersecurity and Risk Management, National Institute of Development Administration (NIDA), in progress</dd>
-      <dt>Previously</dt>
-      <dd>Associate, Marketing, ShopeePay (Thailand)</dd>
-      <dt>Based in</dt>
-      <dd>Bangkok, Thailand</dd>
-      <dt>Languages</dt>
-      <dd>Thai (native), English (TOEIC 915)</dd>
-    </dl>
+    <h2>Experience</h2>
+    <ul class="rows">
+      <li>
+        <span class="what">Internal controls and operations</span>
+        <span class="when">Jul 2022 – present</span>
+        <span class="where">Private import and logistics business</span>
+      </li>
+      <li>
+        <span class="what">Associate, Marketing</span>
+        <span class="when">Aug 2021 – Feb 2022</span>
+        <span class="where">ShopeePay (Thailand) Co., Ltd.</span>
+      </li>
+      <li>
+        <span class="what">Relationship Officer, business risk support</span>
+        <span class="when">Jan 2021 – Jul 2021</span>
+        <span class="where">Bangkok Bank PCL</span>
+      </li>
+      <li>
+        <span class="what">Finance Operations Coordinator</span>
+        <span class="when">Sep 2017 – Sep 2018</span>
+        <span class="where">ExxonMobil Co., Ltd.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="rows">
+      <li>
+        <span class="what">MSc Cybersecurity and Risk Management</span>
+        <span class="when">ongoing, 2026</span>
+        <span class="where">National Institute of Development Administration (NIDA), Bangkok</span>
+      </li>
+      <li>
+        <span class="what">MEcon Finance</span>
+        <span class="when">2020</span>
+        <span class="where">University of International Business and Economics, Beijing</span>
+      </li>
+      <li>
+        <span class="what">BBA Business Economics</span>
+        <span class="when">2017</span>
+        <span class="where">Assumption University, Bangkok</span>
+      </li>
+    </ul>
   </section>
 
   <section>
@@ -275,6 +311,10 @@
       <dd><a href="https://www.linkedin.com/in/paprasnua">linkedin.com/in/paprasnua</a></dd>
       <dt>CV</dt>
       <dd><a href="cv.pdf">Download CV (PDF)</a></dd>
+      <dt>Based in</dt>
+      <dd>Bangkok, Thailand</dd>
+      <dt>Languages</dt>
+      <dd>Thai (native); English, professional working proficiency (TOEIC 915)</dd>
     </dl>
   </section>
 
